@@ -1,2 +1,5 @@
-# matrix-class-OOP-Course
-A matrix class implemented for course "Object oriented programming in C++"
+# Task: Generic Class for Rectangular Matrices
+
+Define a generic class for rectangular matrices with elements of an unspecified type. Overload the operators =, ==, +, - (unary and binary), *, [ ] (indexing), and conversion from an object of the given unspecified type to a matrix with 1 row and 1 column. Represent a matrix with m rows and n columns as a vector (i.e., a pointer to the type of elements) formed by sequentially arranging the matrix rows, i.e., a11, a12, ... a1n, a21, a22, ... a2n, ... ... am1, am2, ..., amn. The [ ] operator should return a pointer to the beginning of the line specified by the parameter, counting from 0 in the representation described above. For instance, if 'a' is an object of the class, a[i] should be a pointer to the type of elements with the value being the address of the element a(i+1)1 in the notation above. Similarly, a[i][j] should represent the element a(i+1)(j+1) in the same notation. The second use of the [ ] operator is the default one for pointers to the type of matrix elements.
+
+Provide examples of creating and using objects for various types of matrix elements.
